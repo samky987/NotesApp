@@ -17,15 +17,15 @@
 
 **DTOs (Data Transfer Objects):** DTOs are used for data exchange between the client and the server, to decouple the internal persistence models from presentation. ModelMapper library is used to map the DTOs to Model objects and vice versa.
 
-**Standard Response Objects:** Standard response objects are used across the application to provide consistent API responses. ResponseWithData is used to encapsulate DTOs, and ResponseWithError is used to encapsulate failure in field validation or other errors.
+**Standard Response Objects:** Standard response objects are used across the application to provide consistent API responses. ResponseWithData is used to encapsulate DTOs, and ResponseWithError is used to encapsulate failure in field validation or errors.
 
-**Virtual Threads:** Virtual threads are used as the default threads for tomcat, virtual threads allow developers to write asynchronous code with imperative style programming and provide better scalability than platform threads.
+**Virtual Threads:** Virtual threads are used as the default threads for tomcat server, virtual threads allow developers to write asynchronous code with imperative style programming and provide better scalability than platform threads.
 
-**Security:** The application handle password hashing, and JWT token authentication.
+**Security:** The application handles password hashing, and JWT token authentication.
 
-**Global Error Handling:** RestControllerAdvice and AuthenticationEntryPoint are used with custom exception to centralize exceptions handling, and hide internal implementation from the user.
+**Global Error Handling:** RestControllerAdvice and AuthenticationEntryPoint are used with custom exceptions to centralize exception handling, and hide internal implementation from the user.
 
-**Caching:** Caching is utilized to improve performance using Spring's default caching with ConcurrentHashMap. Cache keys are based off the JWT token and Note ID to make sure of data privacy. For production grade caching another caching provider such as Caffeine or Redis can be used.
+**Caching:** Caching is utilized to improve performance using Spring's default caching with ConcurrentHashMap. Cache keys are based on the JWT token and Note ID to make sure of data privacy. For production grade caching another caching provider such as Caffeine or Redis can be used.
 
 
 ## Postman Collection
