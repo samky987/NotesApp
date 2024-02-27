@@ -19,7 +19,7 @@
 
 **Standard Response Objects:** Standard response objects are used across the application to provide consistent API responses. ResponseWithData is used to encapsulate DTOs, and ResponseWithError is used to encapsulate failure in field validation or errors.
 
-**Virtual Threads:** Virtual threads are used as the default threads for tomcat server, virtual threads allow developers to write asynchronous code with imperative style programming and provide better scalability than platform threads.
+**Virtual Threads:** Virtual threads are used as the default threads for tomcat server, virtual threads allow developers to write code that is similar to asynchronous code(non-blocking) without the overhead of promises and callback. Virtual threads provide better scalability than platform threads since they are managed by the JVM and are cheap to create.
 
 **Security:** The application handles password hashing, and JWT token authentication.
 
@@ -36,7 +36,7 @@ Postman collection with sample data attached in the projects file
 
 1. New user registration using the endpoint POST /public/users
  
-2. New session using the endpoint POST /public/users/session. The result will be a JWT token that should be copied and pasted in the Authorization header for subsequent requests.
+2. New session using the endpoint POST /public/users/session. The result will be a JWT token that should be copied and pasted into the Authorization header for subsequent requests.
 
 3. (Post, Get, Delete) Note: /notes
 
