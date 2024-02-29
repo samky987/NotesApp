@@ -43,6 +43,6 @@ Postman collection with sample data attached in the projects file
 
 ## Requirements to run:
 
-* Lombok plugin for the IDE (Lombok is a Java library that allows developers to focus on the business logic of their applications without worrying about boilerplate, eclipse and intellij provide a plugin to use the library)
+* Lombok plugin for the IDE (Lombok is a Java library that allows developers to focus on the business logic of their applications without worrying about boilerplate, eclipse and intellij provide a plugin to use the library).
 * Maven
 * Docker
